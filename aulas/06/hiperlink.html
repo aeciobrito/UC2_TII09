@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiperlinks</title>
+</head>
+<body>
+    <h1>Aula de HTML: Uso de Hiperlinks</h1>
+    <hr>
+
+    <ul>
+        <li><a href="#secao1">Introdução</a></li>
+        <li><a href="#secao2">A tag "a"</a></li>
+        <li><a href="#secao3">Sintaxe Básica da Tag "a"</a></li>
+        <li><a href="#secao4">Atributos Comuns da Tag "a"</a></li>
+        <li><a href="#secao5">Exemplo Navegável</a></li>
+        <li><a href="#secao6">Navegação Dentro da Mesma Página</a></li>
+    </ul>
+
+    <hr>
+
+    <h2 id="secao1">Introdução aos Hiperlinks em HTML</h2>
+
+    <p>
+        Hiperlinks são um dos elementos fundamentais da web, permitindo
+        a navegação entre páginas e recursos. Em HTML, os hiperlinks são criados
+        usando a tag "a", também conhecida como "anchor" (âncora). Essa tag pode
+        vincular o usuário a outras páginas, arquivos, ou até mesmo seções específicas
+        dentro da mesma página.
+    </p>
+
+    <h2 id="secao2">A tag "a":</h2>
+
+    <p>
+        A tag "a" é usada para criar hiperlinks. Ela pode incluir vários atributos,
+        mas os mais comuns são <em>href</em> e <em>traget</em>.
+    </p>
+
+    <h3 id="secao3">Sintaxe Básica da Tag "a":</h3>
+    <a href="URL"> Texto do Link. </a>
+
+    <h3 id="secao4">Atributos Comuns da Tag "a":</h3>
+    <ul>
+        <li>href: Define o destino do link (URL)</li>
+        <li>traget: Especifica onde abrir o link. Valores comuns são _self (padrão)
+            e _blank(nova aba/janela).
+        </li>
+        <li>title: Adiciona um texto explicativo que aparece ao passar o mouse sobre o link.</li>
+    </ul>
+
+    <h3 id="secao5">Exemplo Navegável: </h3>
+
+    <a href="https://www.w3schools.com/html/default.asp">Site de Referencia</a>
+    <br>
+    <a href="https://www.w3schools.com/html/default.asp" target="_blank">Site de Referencia - Nova Aba</a>
+
+    <h3 id="secao6">Navegação Dentro da Mesma Página</h3>
+
+    <p>
+        Para criar links que naveguem para diferentes <b><i>seções</i></b> da mesma página,
+        usamos identificadores (<b>id</b>) e o atributo <em>href</em> com #.
+    </p>
+
+    <h2>Navegação no Mesmo Projeto</h2>
+
+    <p>
+        É possível criar links de navegação dentro do mesmo projeto. Por exemplo,
+        esse projeto está dividio em pastas enumeradas (01, 02, 03...), cada uma 
+        com seus respectivos arquivos e atividades.
+    </p>
+
+    <ul>
+        <li>Acesse <a href="../01/index.html">aqui</a> a aula 01.</li>
+        <li>Acesse <a href="">aqui</a> a atividade da aula 04.</li>
+        <li>Clique <a href="./manual_qualificacao.pdf">aqui</a> para baixar o arquivo.</li>
+    </ul>
+    </ul>
+</body>
+</html>
