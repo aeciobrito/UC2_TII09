@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;    
+}
+
+button {
+    background-color: yellow;
+    color: black;
+}
