@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color:  blueviolet;
+        }
+
+        .laranja, .verde, .vermelho {
+            width: 75px;
+            height: 75px;
+            border: 1px solid black;            
+        }
+
+        .verde { background-color: green; }
+        .laranja { background-color: orange; }
+        .vermelho { background-color: red;}
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: end;            
+            gap: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="laranja"></div>
+        <div class="verde"></div>
+        <div class="vermelho"></div>
+    </div>
+</body>
+</html>
