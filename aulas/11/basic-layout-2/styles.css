@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(190, 190, 190);
+}
+
+nav {
+    background-color: rgb(220, 220, 220);
+}
+
+main {
+    background-color: black;    
+}
+
+section, aside, div {
+    float: left;
+    padding: 15px;
+}
+
+section {
+    background-color: rgb(155, 155, 155);
+    width: 50%;
+}
+
+aside {
+    background-color: rgb(215, 215, 215);
+    width: 25%;
+}
+
+div {
+    background-color: rgb(120, 120, 120);
+    width: 25%;
+}
+
+footer {
+    background-color: rgb(190, 190, 190);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
