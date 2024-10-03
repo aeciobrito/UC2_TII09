@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline e Block</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Aula: Diferença entre <em>Inline</em> e <em>Block</em> no HTML</h1>
+    </header>
+    <h2>Introdução</h2>
+    <h2>Continuação</h2>
+    <p>
+        No HTML, os elementos podem ser exibidos de duas maneiras principais:
+        <strong>inline</strong> e <strong>block</strong>. Essas duas propriedades
+        definem como os elementos são renderizados no fluxo da página.
+    </p>
+    <hr>
+    <h2>Elementos Block</h2>
+    <ul>
+        <li>
+            <strong>Definição:</strong> Um elemnto <em>block</em> ocupa toda a largura disponível
+            de seu contêiner pai e começa em uma nova linha.
+        </li>
+        <li>
+            <strong>Exemplos:</strong> div, h1 - h6, p, section, article.
+        </li>
+    </ul>
+    <hr>
+    <h2>Elementos Inline</h2>
+    <ul>
+        <li>
+            <strong>Definição:</strong>Um elemento <em>inline</em> ocupa apenas o espaço
+            necessário para o seu conteúdo e não começa em uma nova linha.
+        </li>
+        <li>
+            <strong>Exemplos:</strong> span, a, strong, em, img.
+        </li>
+    </ul>
+    <hr>
+    <h2>Mudando o Comportamento do Display com CSS:</h2>
+    <p>
+        É possível modificar o comportamento dos elementos, usando a propriedade
+        <em>display</em> no CSS:
+        <pre>
+            <code>
+    div {
+        display: inline;
+    }
+
+    div {
+        display: block;
+    }
+            </code>
+        </pre>
+    </p>
+</body>
+
+</html>

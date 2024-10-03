@@ -77,3 +77,17 @@ th {
 td {
     background-color: #f1f1f1;
 }
+
+pre {
+    background-color: rgba(220, 190, 200, 1.0);
+    border-radius: 4px;
+}
+
+code {
+    font-size: 1.1rem;    
+    font-weight: 500;
+}
+
+hr {
+    margin-bottom: 10px;
+}
