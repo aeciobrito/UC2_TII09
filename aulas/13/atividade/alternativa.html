@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 100px 0.5fr 0.5fr 100px;
+            grid-template-areas: 
+                "header header header"
+                "nav    main   aside"
+                "nav    main   anuncio"
+                "footer footer footer"
+            ;
+            gap: 10px;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background: lightblue;
+        }
+
+        nav {
+            grid-area: nav;
+            background: lightgreen;
+        }
+
+        main {
+            grid-area: main;
+            background: lightcoral;
+        }
+
+        aside {
+            grid-area: aside;
+            background: lightgoldenrodyellow;
+        }
+
+        .anuncio {
+            grid-area: anuncio;
+            background: darkmagenta;
+        }
+        footer {
+            grid-area: footer;
+            background-color: lightgray;
+        }
+
+        @media (max-width: 400px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            header, nav, main, aside, footer {
+                grid-column: 1/2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>Header</header>
+        <nav>Menu</nav>
+        <main>Content</main>
+        <aside>Sidebar</aside>
+        <div class="anuncio">Anuncio</div>
+        <footer>Footer</footer>        
+    </div>
+</body>
+</html>
