@@ -1,0 +1,142 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Container with 12-column grid layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+.pre-header ul {
+    display: flex;
+    gap: 10px;
+    grid-column: span 12;
+}
+
+.middle-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    grid-column: span 12;
+}
+
+.middle-header .logo {
+    font-size: 24px;
+}
+
+.middle-header .actions a {
+    margin-left: 20px;
+    color: white;
+}
+
+/* Grid layout for hero section */
+.hero-section {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.hero-left {
+    grid-column: span 6;
+    background-color: lightcoral;
+    padding: 20px;
+    height: 300px; /*remover*/
+}
+
+.hero-middle {
+    grid-column: span 3;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.middle-card {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.hero-right {
+    grid-column: span 3;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+}
+
+/* Another Section */
+.section {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.section:nth-child(odd) {
+    background: white;
+}
+
+.section:nth-child(even) {
+    background: lightgray;
+}
+
+.section-part {
+    grid-column: span 4;
+    background-color: lightyellow;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    padding: 20px 0;
+    grid-column: span 12;
+}
+
+.footer-card {
+    grid-column: span 1;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* Responsive: Shrink layout for small screens */
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
